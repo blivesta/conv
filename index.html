@@ -1,79 +1,134 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Conv : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Conv</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/blivesta/conv">View on GitHub</a>
-
-          <h1 id="project_title">Conv</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/blivesta/conv/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/blivesta/conv/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Conv maintained by <a href="https://github.com/blivesta">blivesta</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <title>
     
+       &middot; conv &middot; Convert image to base64 string, using the html5 canvas.
+    
+  </title>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//blivesta.com/ico/touch-icon-144.png">
+  <link rel="shortcut icon" href="//blivesta.com/ico/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:900,100,700,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/converter.css">
 
-  </body>
+  <script src="//git.blivesta.com/js/ga.js"></script>  
+</head>
+<body class=" site-home">
+    
+    <main class="masthead" role="main">
+  <div class="container">
+    <h1>conv</h1>
+    <p class="lead">Convert image to base64 string, using the html5 canvas.</p>
+    <ul class="social list-inline">
+	<li class="btn-tw">
+	  <a href="https://twitter.com/share" class="twitter-share-button" data-text="Animsition : " data-url="http://git.blivesta.com/conv" data-related="blivesta" data-count="1" data-hashtags="svg,image,converter">Tweet</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		</script>
+	</li>
+	<li class="btn-gg">
+		<div class="g-plusone" data-size="medium" data-href="http://git.blivesta.com/conv"></div>
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/platform.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+	</li>
+</ul>       
+    
+    <div class="adpacks adpacks-border">
+  <script async type="text/javascript" src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=blivesta" id="_adpacks_js"></script>
+</div>
+
+  </div><!-- /.container -->
+</main>
+
+<div class="body">
+  <div class="container">
+    
+    <div class="section">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active">
+          <a href="#select" role="tab" data-toggle="tab">Select image</a>
+        </li>
+        <li>
+          <a href="#pasteSvg" role="tab" data-toggle="tab">Paste svg code</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active fade in" id="select">
+          <input type="file" name="file" id="file">
+          <p>
+            svg / png / jpg
+          </p>
+        </div>
+        <div class="tab-pane" id="pasteSvg">
+          <textarea name="paste" id="paste" class="form-control" rows="2" placeholder="svg code only"></textarea>
+        </div>
+      </div>      
+    
+      <h3>Result</h3>
+      <!-- <h4>html img tag</h4> -->
+      <p>
+        <textarea name="html" id="result-html" class="form-control" rows="3" placeholder="html img tag"></textarea>
+      </p>
+
+      <!-- <h4>css background</h4> -->
+      <p>
+        <textarea name="css" id="result-css" class="form-control" rows="3" placeholder="css background"></textarea>
+      </p>
+      
+      <p class="">
+        <button name="button" class="js-clear btn btn-default btn-lg">Clear</button>
+      </p>
+    </div>
+      
+    <div class="section">
+      <canvas id="canvas"></canvas>
+    </div>
+      
+
+  </div><!-- /.container -->
+</div><!-- /.body -->
+
+    <footer class="footer">
+  <div class="container">
+    <ul class="list-inline">
+      <li>
+        Author&nbsp;<span class="icon-blivesta icon-sm icon-circle"></span>&nbsp;
+        <a href="http://blivesta.com">blivesta</a>
+      </li>
+    </ul>
+    
+    <ul class="list-inline">
+      <li>Other projects</li>
+      <li>·</li>
+      <li><a href="/animsition">Animsition</a></li>
+      <li>·</li>
+      <li><a href="/drawer">Drawer</a></li>
+      <li>·</li>
+      <li><a href="/rippler">Rippler</a></li>
+      <li>·</li>
+      <li><a href="/oblurlay">Oblurlay</a></li>
+      <li>·</li>
+      <li><a href="/chaffle">Chaffle</a></li>
+    </ul>
+  </div>
+</footer>
+
+  <!-- Vendor js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="./js/conv.js"></script>
+
+
+
+</body>
 </html>
