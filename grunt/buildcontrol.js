@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   "use strict";
   grunt.config('buildcontrol', {
       options: {
-        dir: '<%= pkg.dir.public %>',
+        dir: '<%= pkg.dir.pub %>',
         commit: true,
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
