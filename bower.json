@@ -1,0 +1,18 @@
+{
+  "name": "conv",
+  "homepage": "http://git.blivesta.com/converter",
+  "authors": [
+    "blivesta <enmt@blivesta.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "less": "less/",
+      "js": "js/",
+      "fonts": "dist/fonts/"
+    }
+  }
+}

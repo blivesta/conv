@@ -1,0 +1,131 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width:580px;
+}
+
+a{
+  color:@main-color-light;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight:100;
+}
+
+canvas{
+  max-width:100%;
+}
+
+.icon-blivesta{
+  width:16px;
+  height:16px;
+  display:inline-block;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%09%3Cpath%20d%3D%22M8.773%2C0L4.781%2C3.991l3.993%2C3.991l-4.01%2C4.009L8.773%2C16H16V0H8.773z%20M12.398%2C13.703l-2.017-2.016l2.017-2.016l2.016%2C2.016%0A%09L12.398%2C13.703z%20M12.398%2C6.259l-2.017-2.016l2.017-2.016l2.016%2C2.016L12.398%2C6.259z%22/%3E%0A%3C/svg%3E");
+  background-size: 16px;
+  &.icon-sm {
+    width:12px;
+    height:12px;
+    background-size: 12px;
+  }
+  &.icon-lg {
+    width:24px;
+    height:24px;
+    background-size: 12px;
+  }
+  &.icon-circle{
+    border-radius: 50%;
+  }
+}
+
+// social
+//===========================================
+.social{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  li {
+    overflow:hidden;
+    height:20px;
+  }
+  .btn-gh {
+    width:95px;
+  }
+  .btn-tw {
+    width:99px;
+  }
+  .btn-gg{
+    width:73px;
+  }
+  .btn-fb{
+    width:115px;
+    iframe {
+      overflow:hidden;
+    }
+  }
+}
+
+// masthead
+//===========================================
+.masthead {
+  position:relative;
+  padding:30px;
+  border-bottom:1px solid #eee;
+  background-color:rgb(255, 255, 255, .8);
+  background-color:rgba(255, 255, 255, .8);
+  h1{
+    font-weight:700;
+    margin-bottom:5px;
+    opacity:.95;
+    font-size:80px;
+    color:@main-color-dark;
+  }
+  .lead{
+    margin-bottom:10px;
+  }
+  p {
+    font-weight:100;
+  }
+  .site-home & {
+    text-align: center;
+  }
+}
+
+// body
+//===========================================
+.body{
+  padding:40px 20px;
+  background-color:rgb(255, 255, 255, .8);
+  background-color:rgba(255, 255, 255, .8);
+}
+
+// section
+//===========================================
+.section{
+  padding:15px 0;
+}
+
+.nav-tabs {
+  margin-bottom:20px;
+}
+.tab-content {
+  height:60px;
+}
+
+// footer
+//===========================================
+.footer {
+  background-color:rgb(255, 255, 255, .8);
+  background-color:rgba(255, 255, 255, .8);
+  padding:30px 0;
+  border-top:1px solid #eee;
+  .site-home & {
+    text-align: center;
+  }
+}

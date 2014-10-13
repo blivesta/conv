@@ -1,0 +1,62 @@
+---
+layout: base
+base_url: "./"
+---
+<main class="masthead" role="main">
+  <div class="container">
+    <h1>{{ site.title }}</h1>
+    <p class="lead">{{ site.description }}</p>
+    {% include social-link.html %}    
+    {% include adpacks.html %}
+  </div><!-- /.container -->
+</main>
+
+<div class="body">
+  <div class="container">
+    
+    <div class="section">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active">
+          <a href="#select" role="tab" data-toggle="tab">Select image</a>
+        </li>
+        <li>
+          <a href="#pasteSvg" role="tab" data-toggle="tab">Paste svg code</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active fade in" id="select">
+          <input type="file" name="file" id="file">
+          <p>
+            svg / png / jpg
+          </p>
+        </div>
+        <div class="tab-pane" id="pasteSvg">
+          <textarea name="paste" id="paste" class="form-control" rows="2" placeholder="svg code only"></textarea>
+        </div>
+      </div>      
+    
+      <h3>Result</h3>
+      <!-- <h4>html img tag</h4> -->
+      <p>
+        <textarea name="html" id="result-html" class="form-control" rows="3" placeholder="html img tag"></textarea>
+      </p>
+
+      <!-- <h4>css background</h4> -->
+      <p>
+        <textarea name="css" id="result-css" class="form-control" rows="3" placeholder="css background"></textarea>
+      </p>
+      
+      <p class="">
+        <button name="button" class="js-clear btn btn-default btn-lg">Clear</button>
+      </p>
+    </div>
+      
+    <div class="section">
+      <canvas id="canvas"></canvas>
+    </div>
+      
+
+  </div><!-- /.container -->
+</div><!-- /.body -->

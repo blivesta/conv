@@ -1,0 +1,16 @@
+markdown:         redcarpet
+pygments:         true
+permalink:        pretty
+exclude:          ['less','*.json','Gruntfile.js','bower_components','node_modules']
+source:           ./src
+destination:      ./_gh_pages
+encoding:         UTF-8
+title:            conv
+description:      Convert image to base64 string, using the html5 canvas.
+url:              http://git.blivesta.com/conv
+repo:             conv
+repo_url:         https://github.com/blivesta/conv
+author:           blivesta
+author_url:       http://blivesta.com
+twitter:          blivesta
+tag:              svg,image,converter
